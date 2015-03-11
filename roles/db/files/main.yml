@@ -1,0 +1,12 @@
+---
+  # Installation de MySQL Server et de phpmyadmin
+
+  -name: install mysql-server
+  apt: name={{ item }} state=present
+  with_items:
+    - mysql-server
+
+  -name: install phpmyadmin
+  apt: phpmyadmin state=present
+
+  -name:

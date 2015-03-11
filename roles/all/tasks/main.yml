@@ -1,0 +1,8 @@
+---
+  # Installe les composant commun à tous les serveurs
+
+  - name: Installe git, vim, etc...
+  apt: name={{ item }} state=present
+  with_items:
+    - git
+    - vim

@@ -43,6 +43,9 @@
 #db-[99:101]-node.example.com
 
 
-[NGINX-Labo]
+[all]
 192.168.0.12
+192.168.0.16
+
+[webservers]
 192.168.0.16
