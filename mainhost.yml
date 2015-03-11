@@ -17,7 +17,7 @@
     - ./roles/webserver/vars/vars.yml
 
   roles:
-    - webservers
+    - webserver
 
 - hosts: database
   remote_user: root
