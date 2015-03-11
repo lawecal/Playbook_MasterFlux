@@ -8,5 +8,3 @@
 
   -name: install phpmyadmin
   apt: phpmyadmin state=present
-
-  -name:
