@@ -1,4 +1,6 @@
 ---
+    # Handlers pour les opérations de base pour les databases
+    
   - name: start_mysql
     service: name=mysql state=started enabled=yes
 

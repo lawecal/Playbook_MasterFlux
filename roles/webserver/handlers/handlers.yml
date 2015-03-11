@@ -1,5 +1,5 @@
 ---
-  # Handlers pour les opérations de base pour le webserver
+  # Handlers pour les opérations de base pour les webservers
 
     - name: start_apache2
       service: name=apache2 state=started enabled=yes

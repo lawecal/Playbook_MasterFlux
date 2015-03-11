@@ -3,6 +3,8 @@
 
   - name: Install apache2
     apt: name=apache2 state=present
+    notify:
+      - restart_apache2
 
   - name: Install PHP module for apache2
     apt: name={{ items }} state=present
