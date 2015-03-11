@@ -1,0 +1,4 @@
+---
+  # Fichier contenant l'ensemble des variable pour base de données
+
+  apt_cache_expiration: 86400 # en sec ( 86400sec = 24h )

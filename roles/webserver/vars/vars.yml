@@ -1,0 +1,5 @@
+---
+  # Fichier contenant l'ensemble des variable pour webserver
+
+  apt_cache_expiration: 86400 # en sec ( 86400sec = 24h )
+        

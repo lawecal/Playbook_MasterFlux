@@ -1,10 +1,10 @@
 ---
   # Installation de MySQL Server et de phpmyadmin
 
-  -name: install mysql-server
-  apt: name=mysql-server state=present
-  notify:
-    - restart_mysql
+  - name: install mysql-server
+    apt: name=mysql-server state=present
+    notify:
+      - restart_mysql
 
-  -name: install phpmyadmin
-  apt: phpmyadmin state=present
+  - name: install phpmyadmin
+    apt: phpmyadmin state=present

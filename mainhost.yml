@@ -1,0 +1,21 @@
+---
+# Playbook qui déploies l'ensemble des roles (all, webservers, ...)
+
+- hosts: all
+  remote_user: root
+
+  vars_files:
+    - ./all/vars/vars.yml
+
+  roles:
+    - common
+
+- hosts: webservers
+  remote_user: root
+
+#Possible aussi de faire du remote_user avec sudo !
+#  remote_user: yourname
+#  sudo: yes
+
+  roles:
+    - web

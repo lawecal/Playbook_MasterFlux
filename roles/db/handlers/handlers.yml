@@ -1,9 +1,9 @@
 ---
   - name: start_mysql
-  service: name=mysql state=started
+    service: name=mysql state=started enabled=yes
 
   - name: stop_mysql
-  service: name=mysql state=stoped
+    service: name=mysql state=stoped
 
   - name: restart_mysql
-  service: name=mysql state=restarted
+    service: name=mysql state=restarted enabled=yes

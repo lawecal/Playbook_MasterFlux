@@ -2,15 +2,10 @@
   # Installe la partie webserver ( apache2 + php5 )
 
   - name: Install apache2
-  apt: name=apache2 state=present
-  tags: apache2-install
+    apt: name=apache2 state=present
 
   - name: Install PHP module for apache2
-  apt: name={{ items }} state=present
-  with_items:
-    - php5
-    - php5-mysql
-  tags: php5-install
-
-  -name: Start apache2
-  service: name=apache2 state=running enabled=yes
+    apt: name={{ items }} state=present
+    with_items:
+      - php5
+      - php5-mysql
